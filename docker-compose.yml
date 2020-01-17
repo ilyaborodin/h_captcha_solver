@@ -1,0 +1,8 @@
+version: "3"
+services:
+  server:
+    container_name: "captcha"
+    build: ./
+    command: bash -c "python3 ./main.py"
+    ports:
+      - 2504:2504
